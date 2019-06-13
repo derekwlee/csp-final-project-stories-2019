@@ -106,6 +106,22 @@ Around the same time I got an asthma attack.... love that! A little two year old
     <br>
     <img src="https://i.pinimg.com/originals/dd/c5/3f/ddc53f99884c4f0a34d57d5d93c941d7.jpg" width="500">
 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </body>
 </html>
 
